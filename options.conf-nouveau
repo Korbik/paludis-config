@@ -1,7 +1,5 @@
-#*/* build_options: jobs=8 symbols=preserve
-*/* build_options: jobs=1 symbols=preserve
-
-*/* targets: x86_64-pc-linux-gnu i686-pc-linux-gnu
+*/* build_options: jobs=13 symbols=preserve
+#*/* build_options: jobs=1 symbols=preserve
 
 */* amd64_cpu_features: avx avx2 fma3 fma4 sse3 sse4.1 sse4.2 ssse3
 */* git_remote_helpers: bzr mercurial
@@ -30,8 +28,7 @@
 */* startup-notification
 */* threads
 */* udev
-*/* vorbis
-#*/* vala vapi vorbis
+*/* vala vapi vorbis
 */* wayland
 */* xattr
 */* zsh-completion
@@ -44,7 +41,6 @@ app-shells/zsh pcre
 app-text/poppler cairo glib lcms
 #app-virtualization/qemu amd64 spice
 sys-boot/grub efi
-dev-lang/openjdk8 bootstrap
 dev-lang/icedtea7 bootstrap
 dev-lang/icedtea6 
 dev-lang/ghc bootstrap
@@ -52,7 +48,8 @@ dev-lang/mono X
 dev-lang/python sqlite
 dev-lang/ruby -berkdb -gdbm
 dev-lang/swig perl python
-dev-libs/glib-networking gnome-proxy gnutls 
+dev-libs/glib-networking gnome-proxy gnutls
+#dev-libs/glib-networking gnutls
 dev-libs/libpcap -bluetooth
 dev-scm/subversion perl python python_abis: -* 2.7
 gnome-bindings/pygobject
@@ -89,18 +86,17 @@ net-im/folks eds
 net-irc/weechat -man-pages
 net-libs/libproxy gnome xulrunner
 #net-libs/libproxy gnome webkit
-#net-libs/webkit opengl
+net-libs/webkit opengl
 net-p2p/transmission gtk
 net-www/chromium-stable gconf keyring
 net-www/chromium-dev gconf keyring
 net-www/firefox gstreamer gconf
 net-www/nightly gstreamer wifi
 sys-apps/coreutils gmp
-sys-apps/paludis pink -python ruby
-#sys-apps/paludis pink ruby
+sys-apps/paludis pink ruby
 sys-apps/systemd acl bootchart efi gcrypt kdbus polkit seccomp 
 sys-apps/upower idevice
-sys-devel/gcc propolice sanitizers -threads
+sys-devel/gcc propolice sanitizers
 sys-libs/pam nis
 sys-process/htop cgroups
 sys-sound/alsa-plugins libsamplerate
@@ -142,13 +138,11 @@ dev-python/isodate python_abis: -* 2.7
 dev-python/mock python_abis: -* 2.7
 dev-python/nose python_abis: -* 2.7
 dev-python/py python_abis: -* 2.7
-#dev-python/pytest python_abis: -* 2.7
 dev-python/pytest python_abis: -* 2.7
 dev-python/rdflib python_abis: -* 2.7
 dev-python/six python_abis: -* 2.7
 dev-python/SPARQLWrapper python_abis: -* 2.7
-dev-python/setuptools python_abis:  2.7 3.4
-#dev-python/setuptools python_abis: -* 2.7
+dev-python/setuptools python_abis: -* 2.7
 dev-python/unittest2 python_abis: -* 2.7
 gnome-bindings/pygobject:2 python_abis: -* 2.7
 
@@ -176,41 +170,7 @@ dev-python/Sphinx python_abis: -* 2.7
 # chromium
 app-doc/asciidoc python_abis: -* 2.7
 
-# Multibuild
-#sys-libs/zlib multibuild_c: 64
-#dev-libs/libxml2 multibuild_c: 64
-#dev-lang/python multibuild_c: 64
-
-# Fail
-gnome-bindings/gjs build_options: -recommended_tests
-media-plugins/gst-plugins-base build_options: -recommended_tests
-sys-process/procps build_options: -recommended_tests
-
-# Fail  Tux
-app-pim/tracker build_options: -recommended_tests
-dev-lang/perl build_options: -recommended_tests
-dev-libs/uhttpmock build_options: -recommended_tests
-dev-scm/git python webdav build_options: -recommended_tests
-#dev-scm/git-remote-helpers bzr mercurial build_options: -recommended_tests
-dev-scm/git-remote-helpers bzr mercurial build_options: -recommended_tests
-gnome-desktop/gcr build_options: -recommended_tests
-office-libs/libical build_options: -recommended_tests
-net-im/telepathy-logger build_options: -recommended_tests
-sys-libs/wayland build_options: -recommended_tests
-
-
-# Hang
-dev-lang/ruby build_options: -recommended_tests
-
-# Depends on boost
-dev-cpp/cairomm build_options: -recommended_tests
-media-libs/exempi build_options: -recommended_tests
-
-# Haskell
-dev-haskell/crypto-numbers build_options: -recommended_tests
-dev-haskell/fsnotify build_options: -recommended_tests
-
-#multibuild 32
+# Skype
 app-arch/bzip2 multibuild_c: 32
 app-arch/xz multibuild_c: 32
 dev-db/sqlite multibuild_c: 32
@@ -307,3 +267,29 @@ x11-libs/pango multibuild_c: 32
 x11-libs/pixman multibuild_c: 32
 x11-libs/qt multibuild_c: 32
 x11-libs/virtualgl multibuild_c: 32
+
+# Fail
+gnome-bindings/gjs build_options: -recommended_tests
+media-plugins/gst-plugins-base build_options: -recommended_tests
+sys-process/procps build_options: -recommended_tests
+
+# Fail  Tux
+app-pim/tracker build_options: -recommended_tests
+dev-libs/uhttpmock build_options: -recommended_tests
+dev-scm/git python webdav build_options: -recommended_tests
+dev-scm/git-remote-helpers bzr mercurial build_options: -recommended_tests
+gnome-desktop/gcr build_options: -recommended_tests
+net-im/telepathy-logger build_options: -recommended_tests
+sys-libs/wayland build_options: -recommended_tests
+
+
+# Hang
+dev-lang/ruby build_options: -recommended_tests
+
+# Depends on boost
+dev-cpp/cairomm build_options: -recommended_tests
+media-libs/exempi build_options: -recommended_tests
+
+# Haskell
+dev-haskell/crypto-numbers build_options: -recommended_tests
+dev-haskell/fsnotify build_options: -recommended_tests

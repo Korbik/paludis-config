@@ -1,9 +1,6 @@
-#*/* build_options: jobs=8 symbols=preserve
-*/* build_options: jobs=1 symbols=preserve
+*/* build_options: jobs=13 symbols=preserve
 
-*/* targets: x86_64-pc-linux-gnu i686-pc-linux-gnu
-
-*/* amd64_cpu_features: avx avx2 fma3 fma4 sse3 sse4.1 sse4.2 ssse3
+*/* amd64_cpu_features: 3dnow avx sse3 sse4.1 sse4.2 ssse3
 */* git_remote_helpers: bzr mercurial
 */* gstreamer_plugins: ass mpg123 pango pulse vorbis vpx
 */* linguas: en_GB en fr
@@ -13,14 +10,11 @@
 */* video_drivers: intel nouveau
 
 */* avahi
-*/* bluetooth
 */* dbus
 */* caps
 */* flac
 */* ibus idn
 */* jack
-*/* gobject-introspection 
-*/* gtk3
 */* libnotify libproxy
 */* man-pages
 */* networkmanager nl80211
@@ -30,87 +24,62 @@
 */* startup-notification
 */* threads
 */* udev
-*/* vorbis
-#*/* vala vapi vorbis
+*/* vala vapi vorbis
 */* wayland
 */* xattr
 */* zsh-completion
 
 */* -bash-completion
 
-app-editors/gvim cscope gpm lua perl python 
-app-emulation/wine alsa lcms mp3 opengl 
 app-shells/zsh pcre
-app-text/poppler cairo glib lcms
-#app-virtualization/qemu amd64 spice
+app-text/poppler cairo glib
+app-virtualization/qemu amd64 spice
 sys-boot/grub efi
-dev-lang/openjdk8 bootstrap
-dev-lang/icedtea7 bootstrap
-dev-lang/icedtea6 
-dev-lang/ghc bootstrap
-dev-lang/mono X
+dev-lang/icedtea7 javascript
 dev-lang/python sqlite
 dev-lang/ruby -berkdb -gdbm
-dev-lang/swig perl python
-dev-libs/glib-networking gnome-proxy gnutls 
-dev-libs/libpcap -bluetooth
-dev-scm/subversion perl python python_abis: -* 2.7
-gnome-bindings/pygobject
+dev-lang/swig perl
+dev-libs/glib-networking gnome-proxy gnutls
+dev-scm/git python webdav
+dev-scm/subversion perl
 gnome-desktop/dconf editor
 gnome-desktop/eog exif jpeg svg
 gnome-desktop/evince tiff
 gnome-desktop/evolution-data-server google
-gnome-desktop/file-roller archive nautilus
+gnome-desktop/file-roller archive
 gnome-desktop/gdm xdmcp
 gnome-desktop/gnome-shell browser-plugin
-gnome-desktop/gnome-shell-extensions  alternate-tab -apps-menu -auto-move-windows -classic-mode drive-menu -launch-new-instance -native-window-placement -places-menu -screenshot-window-sizer systemMonitor user-theme -window-list -windowsNavigator -workspace-indicator
 gnome-desktop/GPaste gnome-shell
 gnome-desktop/grilo-plugins freebox pocket tracker
-gnome-desktop/gvfs afc afp archive bluetooth cdda fuse gphoto2 http keyring monitor mtp udisks
+gnome-desktop/gvfs archive bluetooth http keyring monitor udisks
 gnome-desktop/libgdata gnome
 gnome-desktop/mutter sound
 gnome-desktop/nautilus exif
-gnome-desktop/network-manager-applet -bluetooth
-inputmethods/ibus dconf gconf gnome memconf
-media/ffmpeg va
-media/vlc a52 aac ass avahi bidi cddb cdio dirac dts dvd egl ffmpeg flac fontconfig gnomevfs gstreamer h264 h265 id3 jack jpeg libnotify live matroska mp2 mp3 mtp ogg opengl qt4 shout taglib theora truetype upnp va vpdau vorbis vpx xml build_options: -recommended_tests
-media-gfx/darktable camera colord flickr geo-mapping gnome-keyring hdr jpeg2000 json slideshow webp
+inputmethods/ibus memconf
 media-libs/libass fontconfig
-media-libs/libcanberra alsa gstreamer 
-media-plugins/gst-libav -system-libav
+media-libs/libcanberra alsa
 media-sound/pulseaudio async-dns equalizer libsamplerate
 net/eventd -dbus
-#net-analyzer/wireshark gtk
+net-analyzer/wireshark gtk
 net-apps/NetworkManager connection-check
-net-apps/NetworkManager-pptp 
 net-dns/avahi dns_sd
 net-im/empathy geolocation
 net-im/folks eds
 net-irc/weechat -man-pages
-net-libs/libproxy gnome xulrunner
-#net-libs/libproxy gnome webkit
-#net-libs/webkit opengl
+net-libs/libproxy gnome webkit
+net-libs/webkit opengl
 net-p2p/transmission gtk
-net-www/chromium-stable gconf keyring
-net-www/chromium-dev gconf keyring
-net-www/firefox gstreamer gconf
 net-www/nightly gstreamer wifi
 sys-apps/coreutils gmp
-sys-apps/paludis pink -python ruby
-#sys-apps/paludis pink ruby
-sys-apps/systemd acl bootchart efi gcrypt kdbus polkit seccomp 
+sys-apps/paludis pink ruby
+sys-apps/systemd efi 
 sys-apps/upower idevice
-sys-devel/gcc propolice sanitizers -threads
+sys-devel/gcc propolice sanitizers
 sys-libs/pam nis
 sys-process/htop cgroups
 sys-sound/alsa-plugins libsamplerate
 virtualization-lib/libvirt kvm
-#x11-drivers/xf86-video-intel glamor 
-x11-dri/mesa va vdpau xa xvmc
-x11-dri/libdrm 
-x11-drivers/intel-driver X 
-x11-drivers/xf86-video-intel glamor tools 
-x11-libs/libva X opengl
+#x11-drivers/xf86-video-intel glamor
 x11-libs/qt -* dbus webkit
 x11-server/xorg-server suid-wrapper xwayland
 
@@ -142,13 +111,10 @@ dev-python/isodate python_abis: -* 2.7
 dev-python/mock python_abis: -* 2.7
 dev-python/nose python_abis: -* 2.7
 dev-python/py python_abis: -* 2.7
-#dev-python/pytest python_abis: -* 2.7
 dev-python/pytest python_abis: -* 2.7
 dev-python/rdflib python_abis: -* 2.7
 dev-python/six python_abis: -* 2.7
 dev-python/SPARQLWrapper python_abis: -* 2.7
-dev-python/setuptools python_abis:  2.7 3.4
-#dev-python/setuptools python_abis: -* 2.7
 dev-python/unittest2 python_abis: -* 2.7
 gnome-bindings/pygobject:2 python_abis: -* 2.7
 
@@ -156,10 +122,10 @@ gnome-bindings/pygobject:2 python_abis: -* 2.7
 dev-python/pyparsing python_abis: -* 2.7
 
 # llvm
-#dev-python/setuptools python_abis: 2.7
+dev-python/setuptools python_abis: 2.7
 
 # dbus-python tests
-gnome-bindings/pygobject:3 python_abis: 2.7 3.4
+gnome-bindings/pygobject:3 python_abis: 2.7
 
 # pygobject:3 tests
 gnome-bindings/pygobject:3 cairo
@@ -176,41 +142,7 @@ dev-python/Sphinx python_abis: -* 2.7
 # chromium
 app-doc/asciidoc python_abis: -* 2.7
 
-# Multibuild
-#sys-libs/zlib multibuild_c: 64
-#dev-libs/libxml2 multibuild_c: 64
-#dev-lang/python multibuild_c: 64
-
-# Fail
-gnome-bindings/gjs build_options: -recommended_tests
-media-plugins/gst-plugins-base build_options: -recommended_tests
-sys-process/procps build_options: -recommended_tests
-
-# Fail  Tux
-app-pim/tracker build_options: -recommended_tests
-dev-lang/perl build_options: -recommended_tests
-dev-libs/uhttpmock build_options: -recommended_tests
-dev-scm/git python webdav build_options: -recommended_tests
-#dev-scm/git-remote-helpers bzr mercurial build_options: -recommended_tests
-dev-scm/git-remote-helpers bzr mercurial build_options: -recommended_tests
-gnome-desktop/gcr build_options: -recommended_tests
-office-libs/libical build_options: -recommended_tests
-net-im/telepathy-logger build_options: -recommended_tests
-sys-libs/wayland build_options: -recommended_tests
-
-
-# Hang
-dev-lang/ruby build_options: -recommended_tests
-
-# Depends on boost
-dev-cpp/cairomm build_options: -recommended_tests
-media-libs/exempi build_options: -recommended_tests
-
-# Haskell
-dev-haskell/crypto-numbers build_options: -recommended_tests
-dev-haskell/fsnotify build_options: -recommended_tests
-
-#multibuild 32
+# Skype
 app-arch/bzip2 multibuild_c: 32
 app-arch/xz multibuild_c: 32
 dev-db/sqlite multibuild_c: 32
@@ -261,7 +193,7 @@ sys-apps/tcp-wrappers multibuild_c: 32
 sys-apps/util-linux multibuild_c: 32
 sys-auth/polkit multibuild_c: 32
 sys-devel/flex multibuild_c: 32
-sys-devel/libtool multibuild_c: 32 build_options: jobs=1
+sys-devel/libtool multibuild_c: 32
 sys-libs/cracklib multibuild_c: 32
 sys-libs/libcap multibuild_c: 32
 sys-libs/libcap-ng multibuild_c: 32
@@ -295,7 +227,7 @@ x11-libs/libXfixes multibuild_c: 32
 x11-libs/libXft multibuild_c: 32
 x11-libs/libXi multibuild_c: 32
 x11-libs/libXinerama multibuild_c: 32
-x11-libs/libxkbcommon X multibuild_c: 32
+x11-libs/libxkbcommon multibuild_c: 32
 x11-libs/libXrandr multibuild_c: 32
 x11-libs/libXrender multibuild_c: 32
 x11-libs/libxshmfence multibuild_c: 32
@@ -306,4 +238,19 @@ x11-libs/libXxf86vm multibuild_c: 32
 x11-libs/pango multibuild_c: 32
 x11-libs/pixman multibuild_c: 32
 x11-libs/qt multibuild_c: 32
-x11-libs/virtualgl multibuild_c: 32
+
+# Fail
+gnome-bindings/gjs build_options: -recommended_tests
+media-plugins/gst-plugins-base build_options: -recommended_tests
+sys-process/procps build_options: -recommended_tests
+
+# Hang
+dev-lang/ruby build_options: -recommended_tests
+
+# Depends on boost
+dev-cpp/cairomm build_options: -recommended_tests
+media-libs/exempi build_options: -recommended_tests
+
+# Haskell
+dev-haskell/crypto-numbers build_options: -recommended_tests
+dev-haskell/fsnotify build_options: -recommended_tests

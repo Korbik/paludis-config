@@ -1,0 +1,41 @@
+*/* build_options: jobs=13
+
+*/* amd64_cpu_features: 3dnow avx sse3 sse4.1 sse4.2 ssse3
+#*/* gstreamer_plugins: ass mpg123 pango pulse vorbis vpx
+*/* git_remote_helpers: bzr mercurial
+*/* linguas: en_GB en fr
+#*/* providers: -notification-daemon gnome-shell pkgconf
+#*/* python_abis: -* 3.4
+#*/* ruby_abis: -* 2.1
+*/* video_drivers: intel nouveau
+
+*/* dbus
+*/* systemd
+*/* zsh-completion
+
+*/* avahi
+*/* dbus
+*/* caps
+#*/* flac
+#*/* ibus idn
+#*/* jack
+#*/* libnotify libproxy
+*/* man-pages
+*/* networkmanager nl80211
+#*/* ogg online-accounts openmp
+#*/* policykit pulseaudio
+#*/* readline
+#*/* startup-notification
+#*/* threads
+#*/* udev
+#*/* vala vapi vorbis
+#*/* wayland
+#*/* xattr
+#*/* zsh-completion
+
+*/* -bash-completion
+
+dev-scm/git-remote-helpers bzr mercurial
+net-wireless/wpa_supplicant ap nl80211
+sys-apps/systemd efi 
+x11-libs/cairo X

@@ -1,5 +1,5 @@
 CHOST="x86_64-pc-linux-gnu"
+CFLAGS="-march=native -pipe -O2"
 x86_64_pc_linux_gnu_CFLAGS="-pipe -O2 -march=native"
 i686_pc_linux_gnu_CFLAGS="-pipe -O2 -march=native"
-x86_64_pc_linux_gnu_CXXFLAGS="-pipe -O2 -march=native"
-i686_pc_linux_gnu_CXXFLAGS="-pipe -O2 -march=native"
+CXXFLAGS="${CFLAGS}"
