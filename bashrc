@@ -1,13 +1,6 @@
-CFLAGS="-march=native -pipe -O3"
-CXXFLAGS="${CFLAGS}"
-LDFLAGS="-Wl,-O3 -Wl,--as-needed"
+CHOST="x86_64-pc-linux-gnu"
+x86_64_pc_linux_gnu_CFLAGS="-march=native -pipe -O2"
+x86_64_pc_linux_gnu_CXXFLAGS="-march=native -pipe -O2"
+i686_pc_linux_gnu_CFLAGS="-march=native -pipe -O2"
+i686_pc_linux_gnu_CXXFLAGS="-march=native -pipe -O2"
 
-case "${CATEGORY}/${PN}" in
-    "sys-apps/paludis")
-        CXXFLAGS="-march=native -pipe -O0 -g -ggdb3"
-        CFLAGS="${CXXFLAGS}"
-        ;;
-    "x11-libs/cairo")
-        CFLAGS+=" -ffat-lto-objects"
-        ;;
-esac
