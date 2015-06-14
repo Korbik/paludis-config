@@ -62,3 +62,6 @@ sys-libs/glibc
 gnome-desktop/libgudev
 sys-sound/alsa-utils
 gnome-desktop/GPaste
+app-laptop/powertop
+sys-apps/usbutils
+gnome-desktop/cheese
