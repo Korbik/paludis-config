@@ -60,8 +60,10 @@ x11-drivers/xf86-video-intel
 media-libs/libao
 sys-libs/glibc
 gnome-desktop/libgudev
-sys-sound/alsa-utils
 gnome-desktop/GPaste
 app-laptop/powertop
 sys-apps/usbutils
 gnome-desktop/cheese
+sys-devel/gcc
+app-admin/systemd-ui
+net-apps/NetworkManager
