@@ -67,3 +67,13 @@ gnome-desktop/cheese
 sys-devel/gcc
 app-admin/systemd-ui
 net-apps/NetworkManager
+net-www/firefox
+x11-server/xorg-server
+repository/SuperHeron-misc
+repository/kde
+media-gfx/darktable
+media/vlc
+dev-libs/uhttpmock
+gnome-bindings/gjs
+net-www/chromium-stable
+dev-scala/sbt
