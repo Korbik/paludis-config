@@ -31,7 +31,6 @@ repository/ingmar
 repository/java
 repository/drayevarg
 sys-power/laptop-mode-tools
-x11-drivers/xf86-input-synaptics
 gnome-desktop/gnome-terminal
 x11-apps/Germinal
 repository/exony
@@ -56,7 +55,6 @@ app-editors/gvim
 app-editors/gedit
 net-p2p/transmission
 sys-sound/alsa-plugins
-x11-drivers/xf86-video-intel
 media-libs/libao
 sys-libs/glibc
 gnome-desktop/libgudev
@@ -77,3 +75,4 @@ dev-libs/uhttpmock
 gnome-bindings/gjs
 net-www/chromium-stable
 dev-scala/sbt
+x11-drivers/xf86-input-libinput
