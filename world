@@ -77,3 +77,5 @@ net-www/chromium-stable
 dev-scala/sbt
 sys-apps/colord
 x11-drivers/xf86-input-libinput
+repository/malinka
+dev-lang/node
