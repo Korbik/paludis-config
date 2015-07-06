@@ -79,3 +79,7 @@ sys-apps/colord
 x11-drivers/xf86-input-libinput
 repository/malinka
 dev-lang/node
+firmware/intel-microcode
+repository/anderslm
+media-sound/spotify
+gnome-desktop/gvfs
