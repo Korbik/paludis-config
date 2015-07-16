@@ -84,3 +84,5 @@ repository/anderslm
 media-sound/spotify
 gnome-desktop/gvfs
 net-apps/NetworkManager-pptp
+repository/heirecka
+dev-haskell/cabal-install
