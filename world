@@ -86,3 +86,6 @@ gnome-desktop/gvfs
 net-apps/NetworkManager-pptp
 repository/heirecka
 dev-haskell/cabal-install
+repository/alip
+dev-libs/tre
+sci-lang/R
