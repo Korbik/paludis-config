@@ -89,3 +89,5 @@ dev-haskell/cabal-install
 repository/alip
 dev-libs/tre
 sci-lang/R
+repository/kdecherf
+app-admin/password-store
