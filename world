@@ -73,7 +73,6 @@ media-gfx/darktable
 media/vlc
 dev-libs/uhttpmock
 gnome-bindings/gjs
-net-www/chromium-stable
 dev-scala/sbt
 sys-apps/colord
 x11-drivers/xf86-input-libinput
