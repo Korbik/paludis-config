@@ -90,3 +90,7 @@ sci-lang/R
 repository/kdecherf
 app-admin/password-store
 net-fs/nfs-utils
+net-www/chromium-stable
+dev-libs/gnutls
+gnome-desktop/gdm
+gnome-desktop/gnome-shell
