@@ -94,3 +94,4 @@ dev-libs/gnutls
 gnome-desktop/gdm
 gnome-desktop/gnome-shell
 media-gfx/gimp
+dev-util/tig
