@@ -95,3 +95,5 @@ gnome-desktop/gdm
 gnome-desktop/gnome-shell
 media-gfx/gimp
 dev-util/tig
+dev-libs/liboauth
+net-fs/libnfs
