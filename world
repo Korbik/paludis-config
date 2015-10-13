@@ -98,3 +98,6 @@ dev-util/tig
 dev-libs/liboauth
 net-fs/libnfs
 app-admin/eclectic-gcc
+media/mpv
+media-libs/libmediainfo
+media-libs/libzen
