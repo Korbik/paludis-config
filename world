@@ -5,7 +5,6 @@ sys-apps/systemd
 repository/hardware
 net-wireless/iwlwifi-7260-ucode
 repository/keruspe
-sys-boot/gummiboot
 app-text/wgetpaste
 dev-util/strace
 net-misc/dhcpcd
@@ -63,7 +62,6 @@ app-laptop/powertop
 sys-apps/usbutils
 gnome-desktop/cheese
 sys-devel/gcc
-app-admin/systemd-ui
 net-apps/NetworkManager
 net-www/firefox
 x11-server/xorg-server
@@ -101,3 +99,11 @@ app-admin/eclectic-gcc
 media/mpv
 media-libs/libmediainfo
 media-libs/libzen
+app-virtualization/virtualbox-ose
+gnome-desktop/sushi
+net-apps/NetworkManager-vpnc
+dev-util/meld
+gnome-desktop/gnome-system-monitor
+app-office/libreoffice
+repository/pyro
+net-misc/corebird
