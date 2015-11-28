@@ -107,3 +107,11 @@ gnome-desktop/gnome-system-monitor
 app-office/libreoffice
 repository/pyro
 net-misc/corebird
+group/libvirt
+gnome-desktop/gnome-logs
+gnome-desktop/gnome-maps
+net-irc/polari
+app-virtualization/gnome-boxes
+dev-libs/libosinfo
+gnome-desktop/gnome-photos
+gnome-desktop/gnome-control-center
