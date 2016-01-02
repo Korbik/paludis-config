@@ -116,3 +116,4 @@ dev-libs/libosinfo
 gnome-desktop/gnome-photos
 gnome-desktop/gnome-control-center
 dev-haskell/cabal-install
+net-fs/samba
