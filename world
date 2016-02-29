@@ -63,7 +63,6 @@ sys-apps/usbutils
 gnome-desktop/cheese
 sys-devel/gcc
 net-apps/NetworkManager
-net-www/firefox
 x11-server/xorg-server
 repository/SuperHeron-misc
 repository/kde
@@ -96,7 +95,6 @@ dev-util/tig
 dev-libs/liboauth
 net-fs/libnfs
 app-admin/eclectic-gcc
-media/mpv
 media-libs/libmediainfo
 media-libs/libzen
 app-virtualization/virtualbox-ose
@@ -104,7 +102,6 @@ gnome-desktop/sushi
 net-apps/NetworkManager-vpnc
 dev-util/meld
 gnome-desktop/gnome-system-monitor
-app-office/libreoffice
 repository/pyro
 net-misc/corebird
 group/libvirt
@@ -115,5 +112,11 @@ app-virtualization/gnome-boxes
 dev-libs/libosinfo
 gnome-desktop/gnome-photos
 gnome-desktop/gnome-control-center
-dev-haskell/cabal-install
 net-fs/samba
+net-analyzer/wireshark
+sys-fs/dosfstools
+app-text/dos2unix
+app-admin/creds
+dev-perl/Unicode-EastAsianWidth
+repository/mawww
+app-text/source-highlight
