@@ -120,3 +120,5 @@ app-admin/creds
 dev-perl/Unicode-EastAsianWidth
 repository/mawww
 app-text/source-highlight
+dev-db/postgresql
+media-sound/spotify
