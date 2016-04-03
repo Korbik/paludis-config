@@ -108,7 +108,6 @@ group/libvirt
 gnome-desktop/gnome-logs
 gnome-desktop/gnome-maps
 net-irc/polari
-app-virtualization/gnome-boxes
 dev-libs/libosinfo
 gnome-desktop/gnome-photos
 gnome-desktop/gnome-control-center
@@ -122,3 +121,16 @@ repository/mawww
 app-text/source-highlight
 dev-db/postgresql
 media-sound/spotify
+dev-scm/git
+net-misc/curl
+net-misc/neon
+virtualization-ui/spice-gtk
+virtualization-lib/libvirt
+net-www/firefox
+dev-perl/Locale-gettext
+dev-lang/vala
+sys-apps/paludis
+media/libav
+sys-apps/help2man
+app-office/libreoffice
+dev-lang/llvm
