@@ -109,7 +109,6 @@ gnome-desktop/gnome-logs
 gnome-desktop/gnome-maps
 net-irc/polari
 dev-libs/libosinfo
-gnome-desktop/gnome-photos
 gnome-desktop/gnome-control-center
 net-fs/samba
 net-analyzer/wireshark
@@ -134,3 +133,8 @@ media/libav
 sys-apps/help2man
 app-office/libreoffice
 dev-lang/llvm
+compositor/weston
+media-libs/gd
+repository/games
+app-emulation/wine
+sys-apps/iproute2
