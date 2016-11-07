@@ -217,3 +217,5 @@ sys-apps/texinfo
 sys-libs/nss_wrapper
 dev-rust/cargo
 sys-fs/gparted
+virtualization-ui/virt-manager
+app-virtualization/gnome-boxes
