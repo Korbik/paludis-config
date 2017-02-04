@@ -132,7 +132,6 @@ media-libs/gd
 repository/games
 app-emulation/wine
 sys-apps/iproute2
-app-editors/emacs
 media/mpv
 media-sound/pulseaudio
 sys-fs/parted
@@ -219,3 +218,10 @@ dev-rust/cargo
 sys-fs/gparted
 virtualization-ui/virt-manager
 app-virtualization/gnome-boxes
+x11-libs/virglrenderer
+net-plugins/adobe-flash
+dev-python/pip
+x11-libs/qtbase
+x11-libs/qtx11extras
+x11-libs/qtwayland
+app-virtualization/docker
