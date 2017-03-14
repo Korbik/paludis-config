@@ -261,3 +261,9 @@ net-ftp/filezilla
 net-ftp/ncftp
 x11-drivers/xf86-video-dummy
 x11-drivers/xf86-video-nouveau
+media/ffmpeg
+fonts/ubuntu-font-family
+fonts/mononoki
+sys-auth/polkit
+app-crypt/gnupg
+dev-lang/python
