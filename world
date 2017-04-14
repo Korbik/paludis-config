@@ -267,3 +267,12 @@ fonts/mononoki
 sys-auth/polkit
 app-crypt/gnupg
 dev-lang/python
+repository/medvid
+dev-util/d-feet
+net-www/epiphany
+app-virtualization/virtualbox-bin
+sys-apps/flatpak
+repository/CleverCloud
+sys-apps/bc
+sys-fs/exfat-utils
+sys-fs/fuse-exfat
