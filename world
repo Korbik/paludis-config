@@ -52,7 +52,6 @@ net-p2p/transmission
 sys-sound/alsa-plugins
 sys-libs/glibc
 gnome-desktop/libgudev
-gnome-desktop/GPaste
 app-laptop/powertop
 sys-apps/usbutils
 gnome-desktop/cheese
@@ -95,7 +94,6 @@ net-fs/samba
 net-analyzer/wireshark
 sys-fs/dosfstools
 app-text/dos2unix
-app-admin/creds
 repository/mawww
 app-text/source-highlight
 dev-db/postgresql
@@ -169,3 +167,5 @@ app-crypt/keybase
 dev-perl/Digest-HMAC
 dev-perl/Authen-SASL
 dev-lang/swig
+dev-libs/libpeas
+dev-python/dbus-python
