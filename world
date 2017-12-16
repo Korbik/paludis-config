@@ -75,7 +75,6 @@ repository/alip
 sci-lang/R
 repository/kdecherf
 app-admin/password-store
-net-fs/nfs-utils
 net-www/chromium-stable
 dev-libs/gnutls
 gnome-desktop/gdm
@@ -159,7 +158,6 @@ repository/CleverCloud
 sys-apps/bc
 sys-fs/exfat-utils
 sys-fs/fuse-exfat
-app-virtualization/gnome-boxes
 office-libs/libfreehand
 dev-lang/rust
 app-virtualization/moby
@@ -169,3 +167,8 @@ dev-perl/Authen-SASL
 dev-lang/swig
 dev-libs/libpeas
 dev-python/dbus-python
+x11-dri/mesa
+media-plugins/gst-plugins-bad
+sys-devel/libtool
+sci-libs/OpenBLAS
+sci-libs/lapack
