@@ -98,7 +98,6 @@ repository/somasis
 virtual/dhcp-client
 app-doc/gtk-doc-autotools
 dev-lang/perl
-dev-scm/subversion
 fonts/font-misc-misc
 net-libs/webkit
 net-misc/rsync
@@ -108,7 +107,6 @@ sys-apps/texinfo
 sys-libs/nss_wrapper
 sys-fs/gparted
 x11-libs/virglrenderer
-net-plugins/adobe-flash
 x11-libs/qtbase
 x11-libs/qtx11extras
 x11-libs/qtwayland
@@ -190,3 +188,4 @@ media-gfx/gimp
 media-gfx/inkscape
 sys-apps/fd
 dev-haskell/stack-bin
+dev-python/Mako
